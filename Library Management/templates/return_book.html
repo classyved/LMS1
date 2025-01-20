@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Return Book{% endblock %}
+
+{% block content %}
+<h1>Return a Book</h1>
+<form action="/return_book" method="POST">
+    <label for="book_id">Book ID:</label>
+    <input type="text" id="book_id" name="book_id" required>
+
+    <label for="user_id">User ID:</label>
+    <input type="text" id="user_id" name="user_id" required>
+
+    <label for="return_date">Return Date:</label>
+    <input type="date" id="return_date" name="return_date" required>
+
+    <button type="submit">Return Book</button>
+</form>
+{% endblock %}

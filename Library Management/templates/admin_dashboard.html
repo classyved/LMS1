@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Admin Dashboard{% endblock %}
+
+{% block content %}
+<h1>Welcome, Admin!</h1>
+<ul>
+    <li><a href="/add_book">Add Book</a></li>
+    <li><a href="/update_book">Update Book</a></li>
+    <li><a href="/issue_book">Issue Book</a></li>
+    <li><a href="/return_book">Return Book</a></li>
+    <li><a href="/reports">View Reports</a></li>
+</ul>
+{% endblock %}
